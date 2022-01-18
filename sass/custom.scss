@@ -16,6 +16,156 @@ $font-base: 'Kumbh Sans', sans-serif; //weight:  400-700
     font-family: $font-base;
 }
 
+body {
+    background-color: #1597a5;
+}
+
+.contenedor-flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    background-color: $dark-cyan;
+    background-image: url('../images/bg-pattern-top.svg'), url('../images/bg-pattern-bottom.svg');
+    background-repeat: no-repeat;
+    background-position: right 50vw bottom 30vh, left 50vw  top 50vh;
+    // background-position: ;
+
+    min-height: 100vh;
+    color: $very-dark-desaturated-blue;
+}
+
+.tarjeta-perfil {
+    // margin-top: 147px;
+    width: 20.375rem;
+    height: 23.375rem;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.bg-perfil {
+    background: url('../images/bg-pattern-card.svg');
+    background-size: cover;
+    // background-size: cover,heigth;
+    background-repeat: no-repeat;
+    background-position-x: -12px;
+    height: 8.75rem;
+    // width: 21.175rem;
+    position: relative;
+
+    .img-perfil {
+        position: absolute;
+        border-radius: 50%;
+        border: 5px solid white;
+        left: 50%;
+        top: 100%;
+        transform: translate(-50%,-50%);     
+    }
+}
+
+.perfil-info {
+    background-color: white;
+    text-align: center;
+    // font-size: 0.625rem;
+
+    padding-top: 4.5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-bottom: 1.5rem;
+
+    .titulo {
+        font-weight: 700;
+        font-size: 1.125rem;
+
+        .info {
+            font-weight: 400;
+            margin-left: 5px;
+            color: $dark-grayish-blue;
+        }
+        .low-font { display: inline-block; font-size: 0.875rem; margin-left: 0; margin-top: 8px; }
+    }
+}
+
+.perfil-estado {
+    background-color: white;
+    text-align: center;
+    // font-size: 0.625rem;
+    padding-left: 2.5rem;
+    padding-right: 3.1rem;
+    border-top: 1px solid $dark-gray;  
+    padding-top: 1.5rem;  
+
+    .estadisticas-fl {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        list-style: none;
+
+        .estadistica {
+            font-size: 1.125rem;
+            letter-spacing: -0.01rem;
+            line-height: 1.1;
+
+            .info {
+                font-weight: 400;
+                font-size: 0.625rem;
+                letter-spacing: 0.125rem;
+                color: $dark-grayish-blue;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .contenedor-flex {
+        justify-content: flex-start;
+    }
+    
+    .tarjeta-perfil {
+        margin-top: 173px;
+        width: 21.875rem;
+    }
+    
+    .bg-perfil { background: url('../images/bg-pattern-card.svg'); }
+    
+    .perfil-estado {
+        background-color: white;
+        text-align: center;
+        // font-size: 0.625rem;
+        padding-left: 3rem;
+        padding-right: 3.2rem;
+        border-top: 1px solid $dark-gray;  
+        padding-top: 1.5rem;
+    
+        .estadisticas-fl {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            padding-top: 2px;
+            list-style: none;
+    
+            .estadistica {
+                font-size: 1.125rem;
+                letter-spacing: 0;
+                line-height: 1.1;
+    
+                .info {
+                    font-weight: 400;
+                    font-size: 0.625rem;
+                    letter-spacing: 0.125rem;
+                    color: $dark-grayish-blue;
+                }
+            }
+        }
+    }
+
+}
+
+
+
 
 /* Frontend Mentor Styles 👍 */
 .attribution { font-size: 11px; text-align: center; }

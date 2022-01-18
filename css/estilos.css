@@ -7,6 +7,140 @@
   font-family: "Kumbh Sans", sans-serif;
 }
 
+body {
+  background-color: #1597a5;
+}
+
+.contenedor-flex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  background-color: #19a2ae;
+  background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: right 50vw bottom 30vh, left 50vw top 50vh;
+  min-height: 100vh;
+  color: #2d3248;
+}
+
+.tarjeta-perfil {
+  width: 20.375rem;
+  height: 23.375rem;
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.bg-perfil {
+  background: url("../images/bg-pattern-card.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: -12px;
+  height: 8.75rem;
+  position: relative;
+}
+.bg-perfil .img-perfil {
+  position: absolute;
+  border-radius: 50%;
+  border: 5px solid white;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.perfil-info {
+  background-color: white;
+  text-align: center;
+  padding-top: 4.5rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-bottom: 1.5rem;
+}
+.perfil-info .titulo {
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+.perfil-info .titulo .info {
+  font-weight: 400;
+  margin-left: 5px;
+  color: #6a6f81;
+}
+.perfil-info .titulo .low-font {
+  display: inline-block;
+  font-size: 0.875rem;
+  margin-left: 0;
+  margin-top: 8px;
+}
+
+.perfil-estado {
+  background-color: white;
+  text-align: center;
+  padding-left: 2.5rem;
+  padding-right: 3.1rem;
+  border-top: 1px solid #969696;
+  padding-top: 1.5rem;
+}
+.perfil-estado .estadisticas-fl {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  list-style: none;
+}
+.perfil-estado .estadisticas-fl .estadistica {
+  font-size: 1.125rem;
+  letter-spacing: -0.01rem;
+  line-height: 1.1;
+}
+.perfil-estado .estadisticas-fl .estadistica .info {
+  font-weight: 400;
+  font-size: 0.625rem;
+  letter-spacing: 0.125rem;
+  color: #6a6f81;
+}
+
+@media (min-width: 1200px) {
+  .contenedor-flex {
+    justify-content: flex-start;
+  }
+
+  .tarjeta-perfil {
+    margin-top: 173px;
+    width: 21.875rem;
+  }
+
+  .bg-perfil {
+    background: url("../images/bg-pattern-card.svg");
+  }
+
+  .perfil-estado {
+    background-color: white;
+    text-align: center;
+    padding-left: 3rem;
+    padding-right: 3.2rem;
+    border-top: 1px solid #969696;
+    padding-top: 1.5rem;
+  }
+  .perfil-estado .estadisticas-fl {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-top: 2px;
+    list-style: none;
+  }
+  .perfil-estado .estadisticas-fl .estadistica {
+    font-size: 1.125rem;
+    letter-spacing: 0;
+    line-height: 1.1;
+  }
+  .perfil-estado .estadisticas-fl .estadistica .info {
+    font-weight: 400;
+    font-size: 0.625rem;
+    letter-spacing: 0.125rem;
+    color: #6a6f81;
+  }
+}
 /* Frontend Mentor Styles 👍 */
 .attribution {
   font-size: 11px;
